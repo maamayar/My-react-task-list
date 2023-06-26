@@ -7,7 +7,6 @@ const Task =() => {
             <span>
                 <label htmlFor="" className="container-done"></label>
             </span>
-            <TaskUpdate/>
             <button className="btn-delete">
                 <FaTrash/>
             </button>
