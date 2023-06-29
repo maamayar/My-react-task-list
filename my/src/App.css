@@ -1,11 +1,16 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  align-items: center;
-  
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-  max-width: 1228px;
-  margin: 50px auto;
+
+
+
+body {
+	font-family: Poppins;
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: center;
 }
+

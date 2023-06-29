@@ -33,7 +33,7 @@ const Task =() => {
                     value="Learn ..." 
                     placeholder="¿Que hay que hacer?"
                 />
-                <button className="btn-add" type="submit"><FaPlusCircle/></button>
+                <button className= "btn btn-primary" > Add </button>
             </form>
          </div>
         
