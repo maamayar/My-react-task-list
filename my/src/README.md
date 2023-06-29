@@ -1,4 +1,4 @@
-## TASK LIST ##
+## TASKS LIST ##
 ## Application Description:
 
 Our Task List application is designed to help you stay organized and manage your daily tasks effectively. With its user-friendly interface and powerful features, it simplifies the process of task management, allowing you to create, edit, complete, and delete tasks effortlessly. 
