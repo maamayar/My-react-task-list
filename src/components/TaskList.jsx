@@ -1,27 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "./Header";
 import Task from "./Task";
+import useTaskManager from "../useTaskManager";
 
 const TaskList = () => {
-  const [tasks, setTasks] = useState([]);
+  const { tasks, createTask, deleteTask } = useTaskManager();
 
   useEffect(() => {
-    const storedTasks = localStorage.getItem("tasks");
-    if (storedTasks) {
-      setTasks(JSON.parse(storedTasks));
-    }
-  }, []);
+    // Actualizar las tareas en el montaje inicial y cada vez que cambie la lista de tareas
+    // mediante el efecto del useTaskManager
+  }, [tasks]);
 
   const handleAddTask = (newTask) => {
-    const updatedTasks = [...tasks, newTask];
-    setTasks(updatedTasks);
-    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
-  };
-
-  const handleDeleteTask = (taskId) => {
-    const updatedTasks = tasks.filter((_, index) => index !== taskId);
-    setTasks(updatedTasks);
-    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+    createTask(newTask);
   };
 
   return (
@@ -37,12 +28,12 @@ const TaskList = () => {
           </tr>
         </thead>
         <tbody>
-          {tasks.map((task, index) => (
-            <tr key={index}>
+          {tasks.map((task) => (
+            <tr key={task.id}>
               <td>{task.title}</td>
               <td>{task.description}</td>
               <td>
-                <button onClick={() => handleDeleteTask(index)}>Delete</button>
+                <button onClick={() => deleteTask(task.id)}>Delete</button>
               </td>
             </tr>
           ))}

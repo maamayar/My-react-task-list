@@ -1,5 +1,6 @@
+// Task.jsx
+
 import React, { useState } from "react";
-import { FaTrash, FaPlusCircle, FaEdit } from "react-icons/fa";
 
 const Task = ({ handleAddTask }) => {
   const [title, setTitle] = useState("");
@@ -19,30 +20,30 @@ const Task = ({ handleAddTask }) => {
     <div>
       <form onSubmit={handleAddChange}>
         <div>
-          <label htmlFor="title"></label>
+          <label htmlFor="title">Title</label>
           <input
             type="text"
             id="title"
             name="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Title"
+            placeholder="Enter title"
             required
           />
         </div>
         <div>
-          <label htmlFor="description"></label>
+          <label htmlFor="description">Description</label>
           <input
             type="text"
             id="description"
             name="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Description"
+            placeholder="Enter description"
             required
           />
         </div>
-        <button className="btn btn-primary">Add</button>
+        <button type="submit">Add</button>
       </form>
     </div>
   );
