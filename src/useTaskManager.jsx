@@ -11,7 +11,7 @@ const useTaskManager = () => {
   }, []);
 
   const createTask = (newTask) => {
-    const updatedTasks = [...tasks, { ...newTask, id: Date.now() }];
+    const updatedTasks = [...tasks, { ...newTask, id: Date.now(), completed: false }];
     setTasks(updatedTasks);
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   };
@@ -35,6 +35,7 @@ const useTaskManager = () => {
     createTask,
     deleteTask,
     updateTask,
+    setTasks,
   };
 };
 

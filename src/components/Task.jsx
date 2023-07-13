@@ -1,6 +1,5 @@
-// Task.jsx
-
 import React, { useState } from "react";
+import { FaPlusCircle } from "react-icons/fa";
 
 const Task = ({ handleAddTask }) => {
   const [title, setTitle] = useState("");
@@ -20,7 +19,7 @@ const Task = ({ handleAddTask }) => {
     <div>
       <form onSubmit={handleAddChange}>
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title"></label>
           <input
             type="text"
             id="title"
@@ -32,7 +31,7 @@ const Task = ({ handleAddTask }) => {
           />
         </div>
         <div>
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description"></label>
           <input
             type="text"
             id="description"
@@ -43,7 +42,9 @@ const Task = ({ handleAddTask }) => {
             required
           />
         </div>
-        <button type="submit">Add</button>
+        <button className="add-task-button" type="submit">
+          <FaPlusCircle /> Add Task
+        </button>
       </form>
     </div>
   );

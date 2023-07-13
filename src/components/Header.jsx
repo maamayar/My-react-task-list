@@ -1,21 +1,16 @@
-// Header.jsx
-
 import React from "react";
 
-const Header = ({ pendingTasks }) => {
+const Header = ({ pendingTasks, completedTasks }) => {
   return (
     <div className="header">
-      <h1>Task list</h1>
+      <h1>Task List</h1>
       <div className="counter-task">
         <h3>
-          <span>Completed: </span>
+          <span>Completed: {completedTasks}</span>
         </h3>
         <h3>
           <span>Pending: {pendingTasks}</span>
         </h3>
-      </div>
-      <div className="add-task">
-        <h3>Add task</h3>
       </div>
     </div>
   );
