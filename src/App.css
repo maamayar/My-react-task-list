@@ -9,15 +9,6 @@
   align-content: center;
 }
 
-
-:root {
-	--rojo: #ba181b;
-	--azul: #00b4d8;
-	--azul-hover: #48cae4;
-	--rojo-hover: #e5383b;
-	--verde: #09a129;
-}
-
 body {
   background: #ebfefe43;
 	max-width: 1200px;
@@ -82,7 +73,7 @@ th, td {
   margin: 40%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 12px;
   color:#fff;
   border-color: none;
   border: none;
@@ -171,7 +162,7 @@ th, td {
   margin: 35%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px;  
+  padding: 12px;  
   color:#fff;
   border-color: none;
   border: none;

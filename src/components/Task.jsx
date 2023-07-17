@@ -4,15 +4,18 @@ import { FaPlusCircle } from "react-icons/fa";
 const Task = ({ handleAddTask }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [error, setError] = useState("");
 
   const handleAddChange = (e) => {
     e.preventDefault();
-    if (title.trim() === "" || description.trim() === "") {
+    if (title.trim().length <3){
+      setError("The title must have at least 3 characters.");
       return;
     }
     handleAddTask({ title, description });
     setTitle("");
     setDescription("");
+    setError("");
   };
 
   return (
@@ -39,9 +42,9 @@ const Task = ({ handleAddTask }) => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Enter description"
-            required
           />
         </div>
+        {error && <p>{error}</p>}
         <button className="add-task-button" type="submit">
           <FaPlusCircle /> Add Task
         </button>
