@@ -31,13 +31,13 @@ Try our Task List application and experience the benefits of efficient task mana
 
 ## Descripción de la Aplicación:
 
-Nuestra aplicación de Lista de Tareas está diseñada para ayudarte a mantenerte organizado y gestionar tus tareas diarias de manera efectiva. Con su interfaz amigable y sus características poderosas, simplifica el proceso de gestión de tareas, permitiéndote crear, editar, completar y eliminar tareas sin esfuerzo.
+Nuestra aplicación de Lista de Tareas está diseñada para ayudarte a mantenerte organizado y gestionar tus tareas diarias de manera efectiva. Con su interfaz amigable y sus características poderosas, simplifica el proceso permitiéndote crear, editar, completar y eliminar tareas sin esfuerzo.
 
 ## Funcionalidades Clave:
 
-1. Creación de Tareas: Añade fácilmente nuevas tareas a tu lista con una interfaz simple e intuitiva. Solo ingresa la descripción de la tarea y haz clic en el botón "Agregar" para capturar rápidamente tus pendientes.
+1. Creación de Tareas: Añade fácilmente nuevas tareas a tu lista con una interfaz simple e intuitiva. Solo ingresa el titúlo y la descripción de la tarea hacer clic en el botón "Add Task" para capturar rápidamente tus pendientes.
 
-2. Edición de Tareas: Actualiza los detalles de las tareas sobre la marcha. Modifica la descripción de la tarea cuando sea necesario para mantener tu lista de tareas actualizada y relevante.
+2. Edición de Tareas: Actualiza los detalles de las tareas sobre la marcha. Modifica el titulo y la descripción de la tarea cuando sea necesario para mantener tu lista de tareas actualizada y relevante.
 
 3. Completar Tareas: Marca las tareas como completadas cuando las finalices. Esta función proporciona una sensación de logro y te permite hacer un seguimiento de tu progreso.
 
