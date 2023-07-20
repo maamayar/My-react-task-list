@@ -1,23 +1,22 @@
+// TaskList.jsx
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Task from "./Task";
+import Header from "../components/Header";
+import Task from "../components/Task";
 import useTaskManager from "../useTaskManager";
 import { FaTrash, FaEdit, FaSave, FaTimes, FaSquare, FaCheckSquare, FaPlusCircle } from "react-icons/fa";
 
 const TaskList = ({ darkMode }) => {
-    const [isDarkMode, setIsDarkMode] = useState(darkMode);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
   const { tasks, createTask, deleteTask, updateTask, setTasks } = useTaskManager();
   const [editingTaskId, setEditingTaskId] = useState("");
   const [editingTitle, setEditingTitle] = useState("");
   const [editingDescription, setEditingDescription] = useState("");
 
   useEffect(() => {
-    // Actualizar las tareas en el montaje inicial y cada vez que cambie la lista de tareas
-  }, [tasks]);
+    const storedTasks = localStorage.getItem("tasks");
+    if (storedTasks) {
+      setTasks(JSON.parse(storedTasks));
+    }
+  }, [setTasks]);
 
   const handleAddTask = (newTask) => {
     createTask(newTask);
@@ -62,13 +61,8 @@ const TaskList = ({ darkMode }) => {
 
   return (
     <div>
-      <Header
-            pendingTasks={pendingTasks} 
-            completedTasks={completedTasks} 
-            darkMode={darkMode}
-            toggleDarkMode={toggleDarkMode}
-        />
-      <Task handleAddTask={handleAddTask} darkMode={darkMode} />
+      <Header pendingTasks={pendingTasks} completedTasks={completedTasks} />
+      <Task handleAddTask={handleAddTask} />
       <table className={darkMode ? 'dark-mode' : ''}>
         <thead>
           <tr>

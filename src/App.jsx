@@ -1,12 +1,20 @@
 import React from "react";
-import TaskList from "./components/TaskList";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Menu from "./Menu";
+import Home from "./pages/Home";
+import Tasks from "./pages/Tasks";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
-    <div className="App">
-      <TaskList />
-    </div>
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

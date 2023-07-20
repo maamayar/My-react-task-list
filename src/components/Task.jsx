@@ -8,7 +8,7 @@ const Task = ({ handleAddTask }) => {
 
   const handleAddChange = (e) => {
     e.preventDefault();
-    if (title.trim().length <3){
+    if (title.trim().length < 3) {
       setError("The title must have at least 3 characters.");
       return;
     }
