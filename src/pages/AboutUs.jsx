@@ -5,7 +5,7 @@ import "../pages/AboutUs.css";
 function AboutUs() {
   return (
     <div className="aboutus-container">
-      <h1 className="aboutus-title">About Task List App</h1>
+      <h1 className="aboutus-title">About us</h1>
       <div className="aboutus-description">
         <p>
           TaskList is a web and desktop application that helps you organize and manage your daily tasks or activities efficiently. With TaskList, you can add or create, delete, edit or update, and complete your tasks. The app provides a highly intuitive and user-friendly interface, making it easy to manage your daily responsibilities.

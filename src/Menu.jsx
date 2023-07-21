@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ToggleColorMode from "./theme/ToggleColorMode";
+
 
 function Menu() {
   const navigate = useNavigate();
@@ -29,6 +31,7 @@ function Menu() {
           <button type = "button"  onClick={handleAboutClick}>About Us</button>
         </li>
       </ul>
+      <ToggleColorMode/>
     </nav>
   );
 }

@@ -1,53 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-  margin: 0 px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  align-items: center;
-  align-content: center;
 }
 
 body {
-  background: #ebfefe43;
-	max-width: 1200px;
-	margin: 40px auto;
-	display: flex;  
-	justify-content: center;
+  
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 45px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header {
-  background:#fff;
-  color:  #181e2d;
-	padding: 20px;
-	border-radius: 20px;
-	width: 700px;
+  background: #fff;
+  color: #181e2d;
+  padding: 30px;
+  border-radius: 20px;
   box-shadow: 9px 6px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
 
 h1 {
-	text-align: center;
-  color:#00b2a6;
+  text-align: center;
+  color: #00b2a6;
   font-size: 40px;
 }
+
 .counter-task {
-	margin: 40px 0;
-	display: flex;
-	justify-content: space-around;
+   margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .counter-task h3 {
-	font-weight: 500;
+  font-weight: 500;
   font-size: 30px;
 }
 
 .counter-task span {
-	color: #000000;
-	font-weight: 700;
-	font-size: 24px;
-	margin-left: 10px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 10px;
 }
+.container-task-list{
+  max-width: 900px;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -66,17 +75,15 @@ th, td {
   margin-right: 0.5rem;
 }
 
-
-
 .add-task-button {
   display: flex;
   border-radius: 10px;
   background-color: #00b2a6;
   margin: 40%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding: 12px;
-  color:#fff;
+  color: #fff;
   border-color: none;
   border: none;
 }
@@ -88,8 +95,8 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#00b0d4;
-  color:#fff;
+  background-color: #00b0d4;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
 }
@@ -101,12 +108,12 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#e95d00;
-  color:#fff;
+  background-color: #e95d00;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
-
 }
+
 .times-icon {
   display: flex;
   align-items: center;
@@ -114,11 +121,12 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#e5383b;
-  color:#fff;
+  background-color: #e5383b;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
 }
+
 .save-icon {
   display: flex;
   align-items: center;
@@ -126,11 +134,12 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#0022ff;
-  color:#fff;
+  background-color: #0022ff;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
 }
+
 .square-icon {
   display: flex;
   align-items: center;
@@ -138,11 +147,12 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#a10932;
-  color:#fff;
+  background-color: #a10932;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
 }
+
 .check-square-icon   {
   display: flex;
   align-items: center;
@@ -150,25 +160,26 @@ th, td {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:#09a129;
-  color:#fff;
+  background-color: #09a129;
+  color: #fff;
   margin-right: 0.5rem;
   border: none;
-
 }
+
 .delete-all-task{
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   border-radius: 10px;
   background-color: red;
   margin: 35%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  padding: 12px;  
-  color:#fff;
+  padding: 12px;
+  color: #fff;
   border-color: none;
   border: none;
 }
+
 input[type="text"] {
   border: none;
   border-radius: 17px;
@@ -176,14 +187,35 @@ input[type="text"] {
   height: 40px;
   padding: 0.5rem;
   margin-top: 1rem;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.input-name[type="text"] {
+  border: none;
+  border-radius: px;
+  width: 70%;
+  height: 20%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #00b2a6;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   border: none;
 }
+
+.image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+  align-items: center; 
+  margin-top: 60px;
+  width: 650px; 
+}
+

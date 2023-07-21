@@ -1,17 +1,17 @@
 .aboutus-container {
-    margin: 30px auto;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 45px;
-    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 30px auto;
   }
   
   .aboutus-title {
-    font-size: 40px;
     text-align: center;
     color: #00b2a6;
     margin-bottom: 20px;
+   
   }
   
   .aboutus-description {
@@ -22,9 +22,9 @@
   .aboutus-functionalities h2,
   .aboutus-technologies h2 {
     color:#00b2a6;
-    font-size: 40px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
+    font-size: 40px;
   }
   
   .aboutus-functionality-list,
@@ -57,28 +57,13 @@
   .aboutus-functionality-list p,
   .aboutus-technology-list p {
     font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
-    .aboutus-container {
-      max-width: 400px;
-    }
-  
-    .aboutus-title {
-      font-size: 20px;
-    }
-  
-    .aboutus-functionalities h2,
-    .aboutus-technologies h2 {
-      font-size: 18px;
-    }
-  }
+  }  
   .image {
     display: block;
     margin: 0  auto;
     border-radius: 20px;
     box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
     align-items: center; 
-    margin-top: 10px;
+    margin-top: 40px;
     width: 650px; 
   }

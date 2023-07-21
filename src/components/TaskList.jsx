@@ -60,7 +60,7 @@ const TaskList = ({ darkMode }) => {
   const pendingTasks = tasks.length - completedTasks;
 
   return (
-    <div>
+    <div className="container-task-list">
       <Header pendingTasks={pendingTasks} completedTasks={completedTasks} />
       <Task handleAddTask={handleAddTask} />
       <table className={darkMode ? 'dark-mode' : ''}>
