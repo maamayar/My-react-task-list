@@ -13,7 +13,6 @@ const Sidebar = () => {
       marginTop="20px"
     >
       Task List
-
       <Flex direction="row" mt="5" justifyContent="center" alignItems={{ base: "center", md: "flex-start" }}>
         <Button 
           as={NavLink} 

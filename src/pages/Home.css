@@ -8,14 +8,24 @@
     box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
   }
   
-  .home-title {
+  .home-title  {
+    color: #9a9a9a;
+    font-size: 70px;
+  }
+  .home-title-2{
     color: #00b2a6;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
   
   .home-description {
     margin-bottom: 40px;
     text-align: justify;
+  }
+   
+  .p-2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color:#00b2a6;
   }
   .image-home {
     display: block;
